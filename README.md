@@ -28,53 +28,13 @@
 
 ---
 
-## Table of Contents
-
-- [Problem Statement](#problem-statement)
-- [Solution Overview](#solution-overview)
-- [Key Features](#key-features)
-- [Tech Stack](#tech-stack)
-- [Google Technologies Utilized](#google-technologies-utilized)
-- [Architecture](#architecture)
-- [Firestore Data Model](#firestore-data-model)
-- [API Documentation](#api-documentation)
-- [Getting Started](#getting-started)
-- [Scripts](#scripts)
-- [Project Structure](#project-structure)
-
----
-
-## Problem Statement
-
-**The Last-Minute Life Saver** — Students and professionals constantly struggle with last-minute scrambling, missed deadlines, and inconsistent habits. The chaos of juggling multiple tasks, goals, and responsibilities leads to stress, burnout, and reduced productivity. Existing tools either lack intelligent prioritization, fail to provide meaningful motivation, or overwhelm users with complexity. Serene Tracker was built to solve this — helping users stay ahead of deadlines, build consistent habits, and reduce stress through intelligent task planning, focus tools, and mindful breaks.
-
----
-
-## Solution Overview
-
-**Serene Tracker** is a full-stack productivity application that combines task management, habit and goal tracking, a Pomodoro focus timer, mindfulness exercises, and AI-powered intelligent planning into a single unified experience. It uses a gamified **balloon altitude metaphor** — each task is a floating balloon whose altitude drops as its deadline approaches, giving users an intuitive visual sense of urgency. The app features an animated AI companion (the "Serene Guide") that responds to user activity, and a high-contrast "Deep Space" dark theme designed for extended focus sessions.
-
-The application runs as a web app, an AI Studio applet, or an Electron desktop application, with real-time cloud sync via Firebase.
-
-### Core Workflow
-
-1. **Create tasks, habits, and goals** — Organize your work with deadlines and tracking
-2. **Work in focused sessions** — Use the Pomodoro timer while the balloon visualization gamifies your progress
-3. **Get AI-powered suggestions** — The AI Planner analyzes your workload and returns intelligent prioritization
-4. **Take mindful breaks** — Guided breathing exercises help you recharge
-5. **Track your progress** — Metrics dashboard shows completion rates, streaks, and sync status
-
----
-
 ## Key Features
 
-- **Task Management with Balloon Visualization** — Tasks are represented as balloons whose altitude (0–100) indicates urgency. Typing pushes the lowest balloon higher, gamifying focused work. Completion triggers confetti celebrations.
 - **AI-Powered Planning Assistant** — Uses Google Gemini to analyze active tasks, goals, and habits, then returns intelligent priority rankings, scheduling suggestions, and motivational summaries.
 - **Habit & Goal Tracking** — Daily habit streaks with completion toggles, and goal tracking with visual progress bars. Synced to Firestore for authenticated users.
 - **Pomodoro Focus Timer** — Customizable focus sessions (default 25 min) with break cycles and a credit reward system (5 credits per completed session).
 - **Mindful Breathing Exercise** — Guided 4-7-8 breathing technique (inhale 4s, hold 7s, exhale 8s) with visual countdown and phase indicators.
 - **Daily Motivation Quotes** — Fetches random motivational quotes with a refresh option and offline fallback.
-- **Animated AI Companion (GuideSprite)** — An SVG character with multiple states (hovering, heavy breathing, spinning, focused) that reacts to user activity.
 - **Quick Notes (Scratchpad)** — Auto-save to localStorage with debounced persistence and visual save confirmation.
 - **Reminder & Notification System** — Deadline reminders at strategic intervals (60 min to 3 days) and AI-schedule notifications via toast overlays and Firebase Cloud Messaging push notifications.
 - **Calendar Sync View** — Upcoming scheduled tasks view with sync status indicator.
@@ -343,7 +303,6 @@ serene-tracker-app/
 │   │   └── useFocusTracking.ts   # Keystroke tracking, balloon raising
 │   └── components/
 │       ├── AuthOverlay.tsx       # Sign-in/Sign-up modal
-│       ├── BalloonCanvas.tsx     # Balloon urgency visualization
 │       ├── BreathingExercise.tsx # Guided 4-7-8 breathing
 │       ├── DailyQuote.tsx        # Motivational quote fetcher
 │       ├── GoalHabitTracker.tsx  # Habits & goals CRUD
