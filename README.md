@@ -9,13 +9,6 @@
 </p>
 
 <p align="center">
-  <a href="https://ai.studio/apps/d8e323f3-190e-4ac0-967e-b0776d045d9d">View on AI Studio</a>
-  • <a href="#getting-started">Getting Started</a>
-  • <a href="#architecture">Architecture</a>
-  • <a href="#api-documentation">API Docs</a>
-</p>
-
-<p align="center">
   <img src="https://img.shields.io/badge/React-19-61DAFB?style=flat&logo=react" alt="React 19" />
   <img src="https://img.shields.io/badge/TypeScript-5.8-3178C6?style=flat&logo=typescript" alt="TypeScript" />
   <img src="https://img.shields.io/badge/Vite-6-646CFF?style=flat&logo=vite" alt="Vite 6" />
