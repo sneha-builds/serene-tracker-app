@@ -1,0 +1,38 @@
+{
+  "rules": [
+    {
+      "collection": "tasks",
+      "permissions": {
+        "read": "request.auth != null && request.auth.uid == resource.data.user_id",
+        "create": "request.auth != null && request.auth.uid == request.resource.data.user_id",
+        "update": "request.auth != null && request.auth.uid == resource.data.user_id && request.auth.uid == request.resource.data.user_id",
+        "delete": "request.auth != null && request.auth.uid == resource.data.user_id"
+      }
+    },
+    {
+      "collection": "goals",
+      "permissions": {
+        "read": "request.auth != null && request.auth.uid == resource.data.user_id",
+        "create": "request.auth != null && request.auth.uid == request.resource.data.user_id",
+        "update": "request.auth != null && request.auth.uid == resource.data.user_id && request.auth.uid == request.resource.data.user_id",
+        "delete": "request.auth != null && request.auth.uid == resource.data.user_id"
+      }
+    },
+    {
+      "collection": "habits",
+      "permissions": {
+        "read": "request.auth != null && request.auth.uid == resource.data.user_id",
+        "create": "request.auth != null && request.auth.uid == request.resource.data.user_id",
+        "update": "request.auth != null && request.auth.uid == resource.data.user_id && request.auth.uid == request.resource.data.user_id",
+        "delete": "request.auth != null && request.auth.uid == resource.data.user_id"
+      }
+    },
+    {
+      "collection": "users",
+      "permissions": {
+        "read": "request.auth != null && request.auth.uid == document",
+        "write": "request.auth != null && request.auth.uid == document"
+      }
+    }
+  ]
+}

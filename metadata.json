@@ -1,0 +1,6 @@
+{
+  "name": "Serene: Task & Habit Tracker",
+  "description": "A modern, high-contrast task and habit tracker designed to help users maintain focus and seamlessly manage their daily objectives.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

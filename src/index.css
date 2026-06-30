@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+.theme-deep-space .bg-white\/5 { background-color: rgba(0, 0, 0, 0.6) !important; border-color: rgba(255, 255, 255, 0.25) !important; }
+.theme-deep-space .bg-white\/10 { background-color: rgba(0, 0, 0, 0.8) !important; border-color: rgba(255, 255, 255, 0.35) !important; }
+.theme-deep-space .bg-white\/15 { background-color: rgba(20, 20, 20, 0.8) !important; }
+.theme-deep-space .bg-white\/20 { background-color: rgba(40, 40, 40, 0.8) !important; }
+
+.theme-deep-space .border-white\/10 { border-color: rgba(255, 255, 255, 0.25) !important; }
+.theme-deep-space .border-white\/20 { border-color: rgba(255, 255, 255, 0.4) !important; }
+.theme-deep-space .border-white\/30 { border-color: rgba(255, 255, 255, 0.5) !important; }
+
+.theme-deep-space .text-white\/30 { color: rgba(255, 255, 255, 0.6) !important; }
+.theme-deep-space .text-white\/40 { color: rgba(255, 255, 255, 0.7) !important; }
+.theme-deep-space .text-white\/50 { color: rgba(255, 255, 255, 0.85) !important; }
+.theme-deep-space .text-white\/60 { color: rgba(255, 255, 255, 0.95) !important; }
+.theme-deep-space .text-white\/70 { color: rgba(255, 255, 255, 1) !important; }
+
+.theme-deep-space .shadow-lg, 
+.theme-deep-space .shadow-xl { 
+  box-shadow: 0 0 20px rgba(34, 211, 238, 0.15) !important; 
+}
